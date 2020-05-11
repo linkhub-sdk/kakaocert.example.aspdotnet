@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KakaocertExample {
+namespace Kakaocert.Example.Example {
     
     
-    public partial class _Default {
+    public partial class getCMSResult {
         
         /// <summary>
         /// Head1 컨트롤입니다.

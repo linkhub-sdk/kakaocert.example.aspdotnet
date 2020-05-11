@@ -54,6 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Example.css" />
+    <Content Include="Example\getCMSResult.aspx" />
+    <Content Include="Example\getESignResult.aspx" />
+    <Content Include="Example\getVerifyAuthResult.aspx" />
+    <Content Include="Example\requestCMS.aspx" />
+    <Content Include="Example\requestESign.aspx" />
+    <Content Include="Example\requestVerifyAuth.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +72,58 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Example\getCMSResult.aspx.cs">
+      <DependentUpon>getCMSResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getCMSResult.aspx.designer.cs">
+      <DependentUpon>getCMSResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getESignResult.aspx.cs">
+      <DependentUpon>getESignResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getESignResult.aspx.designer.cs">
+      <DependentUpon>getESignResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\getVerifyAuthResult.aspx.cs">
+      <DependentUpon>getVerifyAuthResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\getVerifyAuthResult.aspx.designer.cs">
+      <DependentUpon>getVerifyAuthResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestCMS.aspx.designer.cs">
+      <DependentUpon>requestCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestESign.aspx.cs">
+      <DependentUpon>requestESign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestESign.aspx.designer.cs">
+      <DependentUpon>requestESign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\requestVerifyAuth.aspx.cs">
+      <DependentUpon>requestVerifyAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\requestVerifyAuth.aspx.designer.cs">
+      <DependentUpon>requestVerifyAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kakaocert\Kakaocert.csproj">
+      <Project>{5A7AB6FF-A5BD-4FC9-8BDF-622337EC9A7C}</Project>
+      <Name>Kakaocert</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
