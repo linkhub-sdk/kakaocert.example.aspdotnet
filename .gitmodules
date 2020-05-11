@@ -1,0 +1,6 @@
+[submodule "Linkhub"]
+	path = Linkhub
+	url = https://github.com/linkhub-sdk/linkhub.dotnet
+[submodule "Kakaocert"]
+	path = Kakaocert
+	url = https://github.com/linkhub-sdk/kakaocert.dotnet
