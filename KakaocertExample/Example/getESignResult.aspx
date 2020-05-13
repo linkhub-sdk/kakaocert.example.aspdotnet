@@ -23,9 +23,6 @@
 				<li>clientName (이용기관명) : <%=resultObj.clientName %> </li>
 				<li>state (상태코드) : <%=resultObj.state %> </li>
 				<li>regDT (등록일시) : <%=resultObj.regDT %> </li>
-				<li>receiverHP (수신자 휴대폰번호) : <%=resultObj.receiverHP %> </li>
-				<li>receiverName (수신자 성명) : <%=resultObj.receiverName %> </li>
-				<li>receiverBirthday (수신자 생년월일) : <%=resultObj.receiverBirthday %> </li>
 				<li>expires_in (인증요청 만료시간(초)) : <%=resultObj.expires_in %> </li>
 				<li>callCenterNum (고객센터 번호) : <%=resultObj.callCenterNum %> </li>
 				<li>token (토큰 원문) : <%=resultObj.token %> </li>

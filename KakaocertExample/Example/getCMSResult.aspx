@@ -23,13 +23,6 @@
 				<li>clientName (이용기관명) : <%=resultObj.clientName %> </li>
 				<li>state (상태코드) : <%=resultObj.state %> </li>
 				<li>regDT (등록일시) : <%=resultObj.regDT %> </li>
-				<li>receiverHP (수신자 휴대폰번호) : <%=resultObj.receiverHP %> </li>
-				<li>receiverName (수신자 성명) : <%=resultObj.receiverName %> </li>
-				<li>receiverBirthday (수신자 생년월일) : <%=resultObj.receiverBirthday %> </li>
-				<li>bankAccountName (예금주명) : <%=resultObj.bankAccountName %> </li>
-				<li>bankAccountNum (계좌번호) : <%=resultObj.bankAccountNum %> </li>
-				<li>bankCode (은행코드) : <%=resultObj.bankCode %> </li>
-				<li>clientUserID (납부자번호) : <%=resultObj.clientUserID %> </li>
 				<li>expires_in (인증요청 만료시간(초)) : <%=resultObj.expires_in %> </li>
 				<li>callCenterNum (고객센터 번호) : <%=resultObj.callCenterNum %> </li>
 				<li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <%=resultObj.allowSimpleRegistYN %> </li>
