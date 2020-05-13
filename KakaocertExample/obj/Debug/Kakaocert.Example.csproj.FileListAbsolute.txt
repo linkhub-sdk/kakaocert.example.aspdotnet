@@ -1,9 +1,0 @@
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\KakaocertExample.dll
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\KakaocertExample.pdb
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\Kakaocert.dll
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\Linkhub.dll
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\Linkhub.pdb
-C:\kakaocert.example.aspdotnet\KakaocertExample\bin\Kakaocert.pdb
-C:\kakaocert.example.aspdotnet\KakaocertExample\obj\Debug\ResolveAssemblyReference.cache
-C:\kakaocert.example.aspdotnet\KakaocertExample\obj\Debug\KakaocertExample.dll
-C:\kakaocert.example.aspdotnet\KakaocertExample\obj\Debug\KakaocertExample.pdb
