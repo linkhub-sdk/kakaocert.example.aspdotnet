@@ -38,13 +38,13 @@ namespace Kakaocert.Example.Example
             requestObj.Expires_in = 60;
 
             // 수신자 생년월일, 형식 : YYYYMMDD
-            requestObj.ReceiverBirthDay = "19900108";
+            requestObj.ReceiverBirthDay = "19700101";
 
             // 수신자 휴대폰번호
-            requestObj.ReceiverHP = "01043245117";
+            requestObj.ReceiverHP = "01012341234";
 
             // 수신자 성명
-            requestObj.ReceiverName = "정요한";
+            requestObj.ReceiverName = "테스트";
 
             
             // 예금주명	
