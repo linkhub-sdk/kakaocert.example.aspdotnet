@@ -12,7 +12,7 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>간편 전자서명 결과정보 확인</legend>
+		<legend>전자서명 결과정보 확인</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
@@ -39,6 +39,9 @@
 				<li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <%=resultObj.viewDT %> </li>
 				<li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%=resultObj.completeDT %> </li>
 				<li>verifyDT (전자서명 검증일시) : <%=resultObj.verifyDT %> </li>
+				<li>tx_id (카카오톡 트랜잭션아이디[AppToApp 앱스킴 호출용]) : <%=resultObj.tx_id %> </li>
+				<li>appUseYN (AppToApp인증여부) : <%=resultObj.appUseYN %> </li>
+				
 				
 			<% } %>
 		</ul>

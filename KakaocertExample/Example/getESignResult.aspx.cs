@@ -23,18 +23,22 @@ namespace Kakaocert.Example.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 간편 전자서명 결과정보를 확인합니다.
+            * 전자서명 결과정보를 확인합니다.
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
             String clientCode = "020040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "020050710183000001";
+            String receiptId = "020090313491200001";
+
+            // AppToApp 인증 서명값, 앱스킴성공시 반환되는 signature 기재
+            // TalkMessage 인증시 null 처리
+            String signature = null;
 
             try
             {
-                resultObj = Global.kakaocertService.GetESignResult(clientCode, receiptId);
+                resultObj = Global.kakaocertService.GetESignResult(clientCode, receiptId, signature);
             }
             catch (KakaocertException ex)
             {

@@ -12,13 +12,14 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>간편 전자서명 요청</legend>
+		<legend>전자서명 요청</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
 				<li>Response.message : <%= message %></li>
 			<% } else { %>
-				<li>receiptId(접수아이디) : <%= receiptId %></li>
+				<li>receiptId (접수아이디) : <%= responseObj.receiptId%></li>
+				<li>tx_id (카카오톡 트랜잭션아이디[AppToApp호출용]) : <%= responseObj.tx_id%></li>
 			<% } %>
 		</ul>
 	</fieldset>
