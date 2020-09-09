@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getCMSresultObj.aspx.cs" Inherits="Kakaocert.Example.Example.getCMSResult" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getCMSState.aspx.cs" Inherits="Kakaocert.Example.Example.getCMSState" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -12,7 +12,7 @@
 	<p class="heading1">Response</p>
 	<br/>
 	<fieldset class="fieldset1">
-		<legend>자동이체 출금동의 결과정보 확인</legend>
+		<legend>자동이체 출금동의 서명상태 확인</legend>
 		<ul>
 			<% if (!String.IsNullOrEmpty(code)) { %>
 				<li>Response.code : <%= code %> </li>
@@ -32,7 +32,7 @@
 				<li>expireDT (인증요청 만료일시) : <%=resultObj.expireDT %> </li>
 				<li>tmstitle (인증요청 메시지 제목) : <%=resultObj.tmstitle %> </li>
 				<li>tmsmessage (인증요청 메시지 부가내용) : <%=resultObj.tmsmessage %> </li>
-				<li>signedData (전자서명 데이터 전문) : <%=resultObj.signedData %> </li>
+				
 				<li>subClientName (별칭) : <%=resultObj.subClientName %> </li>
 				<li>subClientCode (별칭코드) : <%=resultObj.subClientCode %> </li>
 				<li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <%=resultObj.viewDT %> </li>

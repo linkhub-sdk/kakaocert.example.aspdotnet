@@ -11,7 +11,7 @@
 namespace Kakaocert.Example.Example {
     
     
-    public partial class getCMSResult {
+    public partial class verifyAuth {
         
         /// <summary>
         /// Head1 컨트롤입니다.

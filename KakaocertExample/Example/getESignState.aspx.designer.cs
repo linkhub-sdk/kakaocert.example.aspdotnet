@@ -11,7 +11,7 @@
 namespace Kakaocert.Example.Example {
     
     
-    public partial class getESignResult {
+    public partial class getESignState {
         
         /// <summary>
         /// Head1 컨트롤입니다.

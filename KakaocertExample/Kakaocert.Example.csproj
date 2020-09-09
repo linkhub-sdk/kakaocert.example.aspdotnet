@@ -55,12 +55,15 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Example.css" />
-    <Content Include="Example\getCMSResult.aspx" />
-    <Content Include="Example\getESignResult.aspx" />
-    <Content Include="Example\getVerifyAuthResult.aspx" />
+    <Content Include="Example\getCMSState.aspx" />
+    <Content Include="Example\getESignState.aspx" />
+    <Content Include="Example\getVerifyAuthState.aspx" />
     <Content Include="Example\requestCMS.aspx" />
     <Content Include="Example\requestESign.aspx" />
     <Content Include="Example\requestVerifyAuth.aspx" />
+    <Content Include="Example\verifyAuth.aspx" />
+    <Content Include="Example\verifyCMS.aspx" />
+    <Content Include="Example\verifyESign.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -72,26 +75,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getCMSResult.aspx.cs">
-      <DependentUpon>getCMSResult.aspx</DependentUpon>
+    <Compile Include="Example\getCMSState.aspx.cs">
+      <DependentUpon>getCMSState.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getCMSResult.aspx.designer.cs">
-      <DependentUpon>getCMSResult.aspx</DependentUpon>
+    <Compile Include="Example\getCMSState.aspx.designer.cs">
+      <DependentUpon>getCMSState.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getESignResult.aspx.cs">
-      <DependentUpon>getESignResult.aspx</DependentUpon>
+    <Compile Include="Example\getESignState.aspx.cs">
+      <DependentUpon>getESignState.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getESignResult.aspx.designer.cs">
-      <DependentUpon>getESignResult.aspx</DependentUpon>
+    <Compile Include="Example\getESignState.aspx.designer.cs">
+      <DependentUpon>getESignState.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Example\getVerifyAuthResult.aspx.cs">
-      <DependentUpon>getVerifyAuthResult.aspx</DependentUpon>
+    <Compile Include="Example\getVerifyAuthState.aspx.cs">
+      <DependentUpon>getVerifyAuthState.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Example\getVerifyAuthResult.aspx.designer.cs">
-      <DependentUpon>getVerifyAuthResult.aspx</DependentUpon>
+    <Compile Include="Example\getVerifyAuthState.aspx.designer.cs">
+      <DependentUpon>getVerifyAuthState.aspx</DependentUpon>
     </Compile>
     <Compile Include="Example\requestCMS.aspx.cs">
       <DependentUpon>requestCMS.aspx</DependentUpon>
@@ -113,6 +116,27 @@
     </Compile>
     <Compile Include="Example\requestVerifyAuth.aspx.designer.cs">
       <DependentUpon>requestVerifyAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyAuth.aspx.cs">
+      <DependentUpon>verifyAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyAuth.aspx.designer.cs">
+      <DependentUpon>verifyAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyCMS.aspx.designer.cs">
+      <DependentUpon>verifyCMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\verifyESign.aspx.cs">
+      <DependentUpon>verifyESign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\verifyESign.aspx.designer.cs">
+      <DependentUpon>verifyESign.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

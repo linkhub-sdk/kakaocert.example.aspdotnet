@@ -13,24 +13,25 @@ using System.Xml.Linq;
 
 namespace Kakaocert.Example.Example
 {
-    public partial class getESignResult : System.Web.UI.Page
+    public partial class verifyESign : System.Web.UI.Page
     {
+       
         public String code = null;
         public String message = null;
-        public ResultESign resultObj = null;
+        public ResponseVerify responseObj = null;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 전자서명 결과정보를 확인합니다.
+            * 전자서명 서명을 검증합니다.
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
             String clientCode = "020040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "020090313491200001";
+            String receiptId = "020090914451000001";
 
             // AppToApp 인증 서명값, 앱스킴성공시 반환되는 signature 기재
             // TalkMessage 인증시 null 처리
@@ -38,7 +39,7 @@ namespace Kakaocert.Example.Example
 
             try
             {
-                resultObj = Global.kakaocertService.GetESignResult(clientCode, receiptId, signature);
+                responseObj = Global.kakaocertService.verifyESign(clientCode, receiptId, signature);
             }
             catch (KakaocertException ex)
             {
@@ -46,5 +47,6 @@ namespace Kakaocert.Example.Example
                 message = ex.Message;
             }
         }
+
     }
 }

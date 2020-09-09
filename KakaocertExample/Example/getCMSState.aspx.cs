@@ -13,28 +13,29 @@ using System.Xml.Linq;
 
 namespace Kakaocert.Example.Example
 {
-    public partial class getVerifyAuthResult : System.Web.UI.Page
+    public partial class getCMSState : System.Web.UI.Page
     {
         public String code = null;
         public String message = null;
-        public ResultVerifyAuth resultObj = null;
+        public ResultCMS resultObj = null;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 본인인증 결과정보를 확인합니다.
+            * 자동이체 출금동의 서명상태를 확인합니다.
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
             String clientCode = "020040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "020051110555900001";
+            String receiptId = "020090914524500001";
 
             try
             {
-                resultObj = Global.kakaocertService.GetVerifyAuthResult(clientCode, receiptId);
+                resultObj = Global.kakaocertService.getCMSState(clientCode, receiptId);
+                
             }
             catch (KakaocertException ex)
             {
