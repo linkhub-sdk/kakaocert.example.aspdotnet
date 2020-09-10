@@ -24,7 +24,8 @@ namespace Kakaocert.Example.Example
         protected void Page_Load(object sender, EventArgs e)
         {
             /**
-            * 전자서명 서명을 검증합니다.
+            * 전자서명 요청시 반환된 접수아이디를 통해 서명을 검증합니다.
+            * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
@@ -33,8 +34,8 @@ namespace Kakaocert.Example.Example
             // 요청시 반환받은 접수아이디
             String receiptId = "020090914451000001";
 
-            // AppToApp 인증 서명값, 앱스킴성공시 반환되는 signature 기재
-            // TalkMessage 인증시 null 처리
+            // App ToApp 앱스킴 성공처리시 반환되는 서명값(iOS-sig, Android-signature)
+            // Talk Message 인증시 null 처리
             String signature = null;
 
             try
