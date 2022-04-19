@@ -36,6 +36,9 @@ namespace Kakaocert.Example.Example
             // 고객센터 전화번호, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
             requestObj.CallCenterNum = "1600-8536";
 
+            // 고객센터명
+            requestObj.CallCenterName = "테스트";
+
             // 인증요청 만료시간(초), 인증요청 만료시간(초) 내에 미인증시, 만료 상태로 처리됨
             requestObj.Expires_in = 60;
 

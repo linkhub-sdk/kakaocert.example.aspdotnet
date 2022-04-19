@@ -25,6 +25,7 @@
 				<li>regDT (등록일시) : <%=resultObj.regDT %> </li>
 				<li>expires_in (인증요청 만료시간(초)) : <%=resultObj.expires_in %> </li>
 				<li>callCenterNum (고객센터 번호) : <%=resultObj.callCenterNum %> </li>
+				<li>callCenterName (고객센터명) : <%=resultObj.callCenterName%> </li>
 				
 				
 				<li>allowSimpleRegistYN (은행계좌 실명확인 생략여부	) : <%=resultObj.allowSimpleRegistYN %> </li>
