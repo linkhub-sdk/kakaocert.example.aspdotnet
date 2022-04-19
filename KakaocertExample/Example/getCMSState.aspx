@@ -38,6 +38,7 @@
 				<li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <%=resultObj.viewDT %> </li>
 				<li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%=resultObj.completeDT %> </li>
 				<li>verifyDT (전자서명 검증일시) : <%=resultObj.verifyDT %> </li>
+				<li>appUseYN (AppToApp인증여부) : <%=resultObj.appUseYN %> </li>
 				
 			<% } %>
 		</ul>

@@ -29,6 +29,9 @@ namespace Kakaocert.Example.Example
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
             String clientCode = "020040000001";
 
+            // AppToApp 인증여부, true-App To App 인증, false-Talk Message인증
+            bool isAppUseYN = false;
+
             RequestCMS requestObj = new RequestCMS();
 
             // 고객센터 전화번호, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
@@ -86,7 +89,7 @@ namespace Kakaocert.Example.Example
 
             try
             {
-                receiptId = Global.kakaocertService.requestCMS(clientCode, requestObj);
+                receiptId = Global.kakaocertService.requestCMS(clientCode, requestObj, isAppUseYN);
             }
             catch (KakaocertException ex)
             {

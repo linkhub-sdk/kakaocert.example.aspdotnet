@@ -30,7 +30,7 @@ namespace Kakaocert.Example.Example
             String clientCode = "020040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "020090914524500001";
+            String receiptId = "022041916301600001";
 
             try
             {
