@@ -18,7 +18,7 @@ namespace Kakaocert.Example.Example
 
         public String code;
         public String message;
-        public String receiptId;
+        public ResponseCMSRequest responseObj;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -92,7 +92,7 @@ namespace Kakaocert.Example.Example
 
             try
             {
-                receiptId = Global.kakaocertService.requestCMS(clientCode, requestObj, isAppUseYN);
+                responseObj = Global.kakaocertService.requestCMS(clientCode, requestObj, isAppUseYN);
             }
             catch (KakaocertException ex)
             {
