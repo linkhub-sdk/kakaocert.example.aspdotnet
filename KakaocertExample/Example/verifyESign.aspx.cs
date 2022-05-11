@@ -33,7 +33,7 @@ namespace Kakaocert.Example.Example
             String clientCode = "020040000001";
 
             // 요청시 반환받은 접수아이디
-            String receiptId = "020090914451000001";
+            String receiptId = "022050914451000001";
 
             // App ToApp 앱스킴 성공처리시 반환되는 서명값(iOS-sig, Android-signature)
             // Talk Message 인증시 null 처리
