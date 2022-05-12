@@ -34,9 +34,13 @@ namespace Kakaocert.Example.Example
             // 요청시 반환받은 접수아이디
             String receiptId = "022050914524500001";
 
+            // App ToApp 앱스킴 성공처리시 반환되는 서명값(iOS-sig, Android-signature)
+            // Talk Message 인증시 null 처리
+            String signature = null;
+
             try
             {
-                responseObj = Global.kakaocertService.verifyCMS(clientCode, receiptId);
+                responseObj = Global.kakaocertService.verifyCMS(clientCode, receiptId, signature);
             }
             catch (KakaocertException ex)
             {
