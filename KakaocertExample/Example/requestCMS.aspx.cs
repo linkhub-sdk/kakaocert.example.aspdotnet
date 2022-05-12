@@ -24,6 +24,7 @@ namespace Kakaocert.Example.Example
         {
             /**
             * 간편 전자서명을 요청합니다.
+            * - https://www.kakaocert.com/docs/CMS/API/dotnet#RequestCMS
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인

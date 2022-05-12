@@ -24,6 +24,7 @@ namespace Kakaocert.Example.Example
         {
             /**
             * 본인인증 요청시 반환된 접수아이디를 통해 서명 상태를 확인합니다.
+            * - https://www.kakaocert.com/docs/verifyAuth/API/dotnet#GetVerifyAuthState
             */
 
             // Kakaocert 이용기관코드, Kakaocert 파트너 사이트에서 확인
